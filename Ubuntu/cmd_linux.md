@@ -36,7 +36,7 @@
   
   <li>-rwx - admin
   <li>r -x - user
- <li> r-- - other
+ <li> r-- - other<br>
   Пользователь root имеет доступ ко всемфайлам и может изменять и читать их
   Минимальные права для директории - 5
   ![image](https://user-images.githubusercontent.com/86486142/150746392-cad8f40f-4ba8-4ede-a0e2-283d77ade864.png)
