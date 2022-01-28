@@ -47,7 +47,7 @@ void my_mouse_callback(int event, int x, int y, int flags, void* param)
 		std::ofstream file;
 		file.open("test1.txt", ios_base::app);
 		unsigned long milliseconds_since_epoch = chrono::system_clock::now().time_since_epoch() / chrono::milliseconds(1);
-		file << milliseconds_since_epoch << " = " << x << " " << y << endl;
+		file << " Metka vremeni: " << milliseconds_since_epoch <<  " Shirota: " << x << " " << " Dolgota: " << y << endl;
 		file.close();
 	}
 
