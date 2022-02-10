@@ -1,3 +1,9 @@
+// Защита OpenCV
+// 1. Что значит строка unsigned long milliseconds_since_epoch = chrono::system_clock::now().time_since_epoch() / chrono::milliseconds(1);
+// 2. Какие существуют потоки для работы с файлами
+// 3. Дополнить код, для считывание из файла координат
+// 4. Доюавить перевод пиксельных координат в географические
+// 5. Изменить команду, чтобы реагировало на правое нажатие мыши.
 #define _CRT_SECURE_NO_WARNINGS
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
