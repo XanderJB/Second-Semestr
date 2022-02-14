@@ -1,9 +1,9 @@
 // Защита OpenCV
-// 1. Что значит строка unsigned long milliseconds_since_epoch = chrono::system_clock::now().time_since_epoch() / chrono::milliseconds(1); - отображение точек на заданных координтах
+// 1. Что значит строка unsigned long milliseconds_since_epoch = chrono::system_clock::now().time_since_epoch() / chrono::milliseconds(1); - расчет времени совершения события(нажатия лкм или пкм)
 // 2. Какие существуют потоки для работы с файлами - ifstream: для чтения с файла; ofstream: для записи в файл; fstream: совмещает запись и чтение
 // 3. Дополнить код, для считывание из файла координат - done
 // 4. Доюавить перевод пиксельных координат в географические - done
-// 5. Изменить команду, чтобы реагировало на правое нажатие мыши.
+// 5. Изменить команду, чтобы реагировало на правое нажатие мыши - done
 
 #include <stdio.h>
 #include <iostream>
