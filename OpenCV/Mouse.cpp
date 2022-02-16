@@ -67,7 +67,7 @@ int main(int argc, char** argv)
 
 	void my_mouse_callback(int event, int x, int y, int flags, void* param)
 	{
-		if (event == EVENT_LBUTTONDOWN)
+		if (event == EVENT_RBUTTONDOWN)//LBUTTONDOWN для нажатия ЛКМ
 		{
 			Mat* plmage = (Mat*)param;
 			Mat image = *plmage;
