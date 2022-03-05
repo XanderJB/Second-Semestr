@@ -26,4 +26,4 @@
   сохранение сообщений в базе данных;<br>
   вызов веб-сервисов;<br>
   распространение сообщений подписчикам, если используются шаблоны типа издатель-подписчик.<br>
-5) что означает строка: channel.basic_consume(on_message_callback=info_message, queue=queue, auto_ack=True) - 
+5) что означает строка: channel.basic_consume(on_message_callback=info_message, queue=queue, auto_ack=True) - отправка сообщения с сервера получателю в очереди
