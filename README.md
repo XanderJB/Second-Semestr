@@ -1,6 +1,8 @@
 # Second-Semestr
 # Презентация
 https://docs.google.com/presentation/d/17YdUQJrXn2dPckjSeDarp3v6mYDyaHhsLKEFe0GpqEk/edit#slide=id.gd19284b371_0_0
+# Задания
+https://docs.google.com/presentation/d/17YdUQJrXn2dPckjSeDarp3v6mYDyaHhsLKEFe0GpqEk/edit#slide=id.g115d535def1_0_7
 # История ОС
 # ОС 1- го поколения - ОС пока не существует
 1943 - баллистические таблицы
