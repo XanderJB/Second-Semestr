@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -22,30 +22,35 @@ namespace ConsoleAppTest
     {
         static List<Mark> GetMarks(DateTime now, List<string> students)
         {
-            Random rnd = new Random();
-            List<Mark> listMark1 = new List<Mark>();
-            for (int i = 0; i < 30; i++)
-            {
-                DateTime data = now.AddDays(i);
-                Console.WriteLine(data);
-                for (int j = 0; j < students.Count; j++)
-                {
-                    List<Mark> listMark = new List<Mark>();
+            List<Mark> marks = new List<Mark>();
 
+            for (int j = 0; j < 30; j++)
+            {
+
+                DateTime date = now.AddDays(j);
+                Console.WriteLine(date);
+
+                for (int i = 0; i < students.Count; i++)
+                {
+                    var random = new Random();
                     string[] Estimation = { "5", "4", "3", "2", "прогул", "болезнь" };
-                    int index = rnd.Next(0, Estimation.Length);
-                    
+
+                    int index = random.Next(Estimation.Length);
+                    Console.WriteLine("ФИО: {0}; Оценка: {1}", students[i], Estimation[index]);
+
                     Mark mark = new Mark();
                     mark.Estimation = Estimation[index];
-                    mark.date = data;
-                    mark.Student = students[j];
-                    listMark.Add(mark);
-                    listMark.ForEach(p => Console.WriteLine($"" + $"Студент: {mark.Student}\nОценка: {Estimation[index]}\n"));
-                    listMark1 = listMark;
-                    int res_1 = GetCountTruancy(listMark);
+                    mark.date = date;
+                    mark.Student = students[i];
+                    //test_mark1.Print();
+                    marks.Add(mark);
+
                 }
+
             }
-            return listMark1;
+            //marks.ForEach(p => Console.WriteLine($"" + $"Дата выставленной отметки: {p.date}\n Студент: {p.Student},  Оценка: {p.Estimation}"));
+
+            return marks;
         }
 
         public static int GetCountTruancy(List<Mark> marks)
@@ -95,18 +100,6 @@ namespace ConsoleAppTest
 
             int res_1 = GetCountTruancy(res);
             int res_2 = GetCountDicease(res);
-            /*Console.WriteLine(res);*/
-
         }
-
-/*        private static int GetCountDicease()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static int GetCountTruancy()
-        {
-            throw new NotImplementedException();
-        }*/
     }
 }
