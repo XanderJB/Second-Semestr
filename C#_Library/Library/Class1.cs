@@ -79,7 +79,7 @@ namespace ClassLibraryTest
         static public int GetCountTruancy(List<Mark> marks)
         {
             DateTime date1 = new DateTime(2022, 03, 21, 0, 0, 0);
-            var Truancy = from p in marks where p.Estimation == "прогулы" where p.date >= date1 select p;
+            var Truancy = from p in marks where p.Estimation == "прогул" where p.date >= date1 select p;
             int count = 0;
             foreach (Mark mark in Truancy)
             {
