@@ -1,5 +1,7 @@
 
-![image](https://user-images.githubusercontent.com/86486142/158786641-564fd6cd-29be-4827-b025-b8af96640993.png)
+ПОЛНОЦЕННЫЙ СКРИН ПРОГРАММЫ
+![image](https://user-images.githubusercontent.com/86486142/159431811-38a015c5-a986-47dc-80ee-8b743db714cd.png)
+
 массив(есть []) - один тип данных, список(List{}) - разные
 функция состоит из 3 частей
 1) тип данных: простые и сложные
