@@ -6,7 +6,7 @@ API_KEY = input("Enter key: ")
 
 BASE_URL = "https://api.pdf.co/v1"
 
-SourceFile = ".\\table_1.pdf"
+SourceFile = input("Enter adress PDF-file: ")
 Pages = ""
 Password = ""
 DestinationFile = ".\\result_1.json"
